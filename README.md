@@ -24,3 +24,5 @@ The answer validator confirms that each citation was fetched and active for the 
 This application is independent of Firedrill. The thin Firedrill adapter and persisted live scenario evidence wait for the released new interface. The repository is private and has no selected public license.
 
 Implementation references: [LangChain agents](https://docs.langchain.com/oss/python/langchain/agents), [structured output](https://docs.langchain.com/oss/python/langchain/structured-output), [ChatAnthropic](https://docs.langchain.com/oss/python/integrations/chat/anthropic).
+
+Explore related applications in the [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog). Product and setup references: [Firedrill](https://firedrill.run/) and the [official developer documentation](https://docs.firedrill.run/). Use documentation matching the qualified release; this repository records its current integration limits above.
