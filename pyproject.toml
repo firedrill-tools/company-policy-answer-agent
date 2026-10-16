@@ -1,9 +1,10 @@
 [project]
 name = "company-policy-answer-agent"
-version = "0.1.0"
+version = "0.2.0"
+readme = "README.md"
 description = "Sourced policy Q&A with LangChain and Anthropic"
 requires-python = ">=3.12"
-dependencies = ["langchain>=1.0,<2", "langchain-anthropic==1.7.6"]
+dependencies = ["langchain==1.4.6", "langchain-anthropic==1.7.6", "anthropic==1.14.0", "httpx2==2.13.1"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
@@ -17,6 +18,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/policy_answer"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"data" = "policy_answer/sample_data"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "data", "fixtures", "tests", "scripts", "scenarios", "README.md", "AGENTS.md", "PLAN.md", "COMPATIBILITY.md", ".env.example", "pyproject.toml", "uv.lock"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

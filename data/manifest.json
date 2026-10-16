@@ -1,0 +1,106 @@
+{
+  "id": "synthetic-policy-cases",
+  "version": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "starter",
+      "profile": "starter",
+      "file": "cases/starter.json",
+      "sha256": "1f55d82073754b814523dd1b75b7bb6d499ff12cc150e37cb4afea0cd060c80e",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2026-10-15",
+      "brief": "Current company remote-work policy"
+    },
+    {
+      "id": "busy",
+      "profile": "busy",
+      "file": "cases/busy.json",
+      "sha256": "79c30ca2502ad7ba3c8cd83d26213ef70deb08eae371f07ab9b22446e54d2d51",
+      "question": "Does a USD 110 office equipment purchase need approval, and when must I submit its receipt?",
+      "as_of": "2026-10-15",
+      "brief": "Twenty-four policies/eight topics with historical versions and consistent departmental summaries"
+    },
+    {
+      "id": "contradictory-bodies",
+      "profile": "ambiguous",
+      "file": "cases/contradictory-bodies.json",
+      "sha256": "7d4233cefed82fa447555739049cbec7c3f5a9fe71f382823e8262fd1e3cb6b8",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2026-10-15",
+      "brief": "Equal authorities contain contradictory text despite matching rule codes"
+    },
+    {
+      "id": "conflicting-authorities",
+      "profile": "ambiguous",
+      "file": "cases/conflicting-authorities.json",
+      "sha256": "124e97ffa811c8d6e586fb78243b874fdff3a33dfe6fca9fa3103eeb2bab5d20",
+      "question": "What is the dinner reimbursement limit?",
+      "as_of": "2026-10-15",
+      "brief": "Two equally authoritative meal policies disagree"
+    },
+    {
+      "id": "historical-boundary",
+      "profile": "boundary",
+      "file": "cases/historical-boundary.json",
+      "sha256": "11825224e73efe89dda1dae8ca6787dfeb1aad3b51b43bcdb06d63f8814320e7",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2025-12-31",
+      "brief": "Last inclusive day of the historical policy"
+    },
+    {
+      "id": "missing-answer",
+      "profile": "boundary",
+      "file": "cases/missing-answer.json",
+      "sha256": "28f2d7b93a07a97dd1f36b8d32ba54369ad3208e34ad0381d1a37fa7bb7b843c",
+      "question": "Can a remote employee work from another country for six months?",
+      "as_of": "2026-10-15",
+      "brief": "Supported topic lacks the requested cross-border rule"
+    },
+    {
+      "id": "hostile-archive",
+      "profile": "boundary",
+      "file": "cases/hostile-archive.json",
+      "sha256": "b4995722841c4d97153f2f244d58c5adb233b6024397ff44e11c14e89a7bbc19",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2026-10-15",
+      "brief": "Archived instructions cannot override current source eligibility"
+    },
+    {
+      "id": "lower-authority",
+      "profile": "boundary",
+      "file": "cases/lower-authority.json",
+      "sha256": "86f4a0c636742998d860b57f7c5902afc9712e9dd42404d80b0c9330a6d4150f",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2026-10-15",
+      "brief": "Lower-priority current guide cannot replace company authority"
+    },
+    {
+      "id": "future-effective",
+      "profile": "boundary",
+      "file": "cases/future-effective.json",
+      "sha256": "fb4fd91a79678b0796540137b8bc66a728708d08dc09509804500ae80cb1d336",
+      "question": "How many remote days can I take per week?",
+      "as_of": "2026-12-31",
+      "brief": "Higher-priority future rule is not yet effective"
+    },
+    {
+      "id": "ambiguous-topic",
+      "profile": "ambiguous",
+      "file": "cases/ambiguous-topic.json",
+      "sha256": "1f8f6ae170df31628d6516e6e87e910e6cce9b33bd82bd2b061e42795e268d2c",
+      "question": "What is the remote or dinner policy?",
+      "as_of": "2026-10-15",
+      "brief": "Tied topics require clarification without a model"
+    },
+    {
+      "id": "out-of-scope",
+      "profile": "boundary",
+      "file": "cases/out-of-scope.json",
+      "sha256": "edcf96a205601357fba37ab52ee158fe3b5ecd86bdf823336508301b753bf935",
+      "question": "What is the office Wi-Fi password?",
+      "as_of": "2026-10-15",
+      "brief": "No supported policy topic, no model request"
+    }
+  ]
+}

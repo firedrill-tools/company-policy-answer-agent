@@ -1,0 +1,408 @@
+{
+  "dataset": {
+    "id": "synthetic-policy-cases",
+    "version": 1,
+    "profile": "busy",
+    "case_id": "busy"
+  },
+  "synthetic": true,
+  "provenance": "Entirely fictional approved policy versions/guides, dates and amounts. No model answers, provider observations or measured usage are seeded.",
+  "policies": [
+    {
+      "topic": "remote-work",
+      "title": "Remote work",
+      "keywords": [
+        "remote",
+        "hybrid",
+        "home",
+        "work from home"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "REMOTE-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "two-days",
+      "body": "Employees may work remotely up to two days per workweek with manager scheduling approval. This allowance does not carry over to later weeks."
+    },
+    {
+      "topic": "remote-work",
+      "title": "Remote work",
+      "keywords": [
+        "remote",
+        "hybrid",
+        "home",
+        "work from home"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "REMOTE-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "three-days",
+      "body": "Employees may work remotely up to three days per workweek."
+    },
+    {
+      "topic": "remote-work",
+      "title": "Remote work departmental summary",
+      "keywords": [
+        "remote",
+        "hybrid",
+        "home",
+        "work from home"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "REMOTE-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "two-days",
+      "body": "Summary guide: Employees may work remotely up to two days per workweek with manager scheduling approval. This allowance does not carry over to later weeks. The company policy is the higher authority."
+    },
+    {
+      "topic": "office-expense",
+      "title": "Office equipment",
+      "keywords": [
+        "equipment",
+        "monitor",
+        "keyboard",
+        "office purchase"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "EXPENSE-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "manager-approval-over-75",
+      "body": "Office equipment purchases above USD 75 require manager approval before ordering. Employees submit the receipt within 30 days."
+    },
+    {
+      "topic": "office-expense",
+      "title": "Office equipment",
+      "keywords": [
+        "equipment",
+        "monitor",
+        "keyboard",
+        "office purchase"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "EXPENSE-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "manager-approval-over-50",
+      "body": "Office equipment above USD 50 requires approval, with receipts within 14 days."
+    },
+    {
+      "topic": "office-expense",
+      "title": "Office equipment departmental summary",
+      "keywords": [
+        "equipment",
+        "monitor",
+        "keyboard",
+        "office purchase"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "EXPENSE-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "manager-approval-over-75",
+      "body": "Summary guide: Office equipment purchases above USD 75 require manager approval before ordering. Employees submit the receipt within 30 days. The company policy is the higher authority."
+    },
+    {
+      "topic": "meal-expense",
+      "title": "Travel meals",
+      "keywords": [
+        "meal",
+        "dinner",
+        "lunch",
+        "reimbursement"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "TRAVEL-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "limit-60",
+      "body": "The daily travel meal reimbursement ceiling is USD 60 including tax and tip. An itemized receipt is required."
+    },
+    {
+      "topic": "meal-expense",
+      "title": "Travel meals",
+      "keywords": [
+        "meal",
+        "dinner",
+        "lunch",
+        "reimbursement"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "TRAVEL-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "limit-50",
+      "body": "The daily travel meal ceiling is USD 50 with an itemized receipt."
+    },
+    {
+      "topic": "meal-expense",
+      "title": "Travel meals departmental summary",
+      "keywords": [
+        "meal",
+        "dinner",
+        "lunch",
+        "reimbursement"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "TRAVEL-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "limit-60",
+      "body": "Summary guide: The daily travel meal reimbursement ceiling is USD 60 including tax and tip. An itemized receipt is required. The company policy is the higher authority."
+    },
+    {
+      "topic": "annual-leave",
+      "title": "Annual leave",
+      "keywords": [
+        "annual leave",
+        "vacation",
+        "holiday"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "LEAVE-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "twenty-days",
+      "body": "Full-time employees receive 20 annual leave days; managers approve dates at least 10 business days ahead."
+    },
+    {
+      "topic": "annual-leave",
+      "title": "Annual leave",
+      "keywords": [
+        "annual leave",
+        "vacation",
+        "holiday"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "LEAVE-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "eighteen-days",
+      "body": "Full-time employees receive 18 annual leave days."
+    },
+    {
+      "topic": "annual-leave",
+      "title": "Annual leave departmental summary",
+      "keywords": [
+        "annual leave",
+        "vacation",
+        "holiday"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "LEAVE-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "twenty-days",
+      "body": "Summary guide: Full-time employees receive 20 annual leave days; managers approve dates at least 10 business days ahead. The company policy is the higher authority."
+    },
+    {
+      "topic": "internet-stipend",
+      "title": "Home internet stipend",
+      "keywords": [
+        "internet",
+        "broadband",
+        "connection stipend"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "INTERNET-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "internet-40",
+      "body": "Approved remote employees may claim up to USD 40 per month for home internet, with a dated provider invoice."
+    },
+    {
+      "topic": "internet-stipend",
+      "title": "Home internet stipend",
+      "keywords": [
+        "internet",
+        "broadband",
+        "connection stipend"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "INTERNET-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "internet-30",
+      "body": "Remote employees may claim up to USD 30 per month for home internet."
+    },
+    {
+      "topic": "internet-stipend",
+      "title": "Home internet stipend departmental summary",
+      "keywords": [
+        "internet",
+        "broadband",
+        "connection stipend"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "INTERNET-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "internet-40",
+      "body": "Summary guide: Approved remote employees may claim up to USD 40 per month for home internet, with a dated provider invoice. The company policy is the higher authority."
+    },
+    {
+      "topic": "learning-budget",
+      "title": "Learning budget",
+      "keywords": [
+        "training",
+        "course",
+        "learning budget"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "TRAINING-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "training-600",
+      "body": "Role-related courses have a USD 600 annual allowance with manager approval before enrollment."
+    },
+    {
+      "topic": "learning-budget",
+      "title": "Learning budget",
+      "keywords": [
+        "training",
+        "course",
+        "learning budget"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "TRAINING-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "training-400",
+      "body": "Role-related courses have a USD 400 annual allowance."
+    },
+    {
+      "topic": "learning-budget",
+      "title": "Learning budget departmental summary",
+      "keywords": [
+        "training",
+        "course",
+        "learning budget"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "TRAINING-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "training-600",
+      "body": "Summary guide: Role-related courses have a USD 600 annual allowance with manager approval before enrollment. The company policy is the higher authority."
+    },
+    {
+      "topic": "travel-booking",
+      "title": "Travel booking",
+      "keywords": [
+        "airfare",
+        "flight",
+        "hotel",
+        "booking"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "BOOKING-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "economy-14-days",
+      "body": "Domestic airfare is economy class and should be booked at least 14 days before departure; exceptions require written approval."
+    },
+    {
+      "topic": "travel-booking",
+      "title": "Travel booking",
+      "keywords": [
+        "airfare",
+        "flight",
+        "hotel",
+        "booking"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "BOOKING-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "economy-7-days",
+      "body": "Domestic airfare is economy class and should be booked at least 7 days ahead."
+    },
+    {
+      "topic": "travel-booking",
+      "title": "Travel booking departmental summary",
+      "keywords": [
+        "airfare",
+        "flight",
+        "hotel",
+        "booking"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "BOOKING-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "economy-14-days",
+      "body": "Summary guide: Domestic airfare is economy class and should be booked at least 14 days before departure; exceptions require written approval. The company policy is the higher authority."
+    },
+    {
+      "topic": "equipment-return",
+      "title": "Equipment returns",
+      "keywords": [
+        "return laptop",
+        "device return",
+        "offboarding"
+      ],
+      "effective_until": null,
+      "priority": 10,
+      "id": "RETURN-2026",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "return-five-days",
+      "body": "Company devices must be returned within five business days of offboarding using the issued tracking label."
+    },
+    {
+      "topic": "equipment-return",
+      "title": "Equipment returns",
+      "keywords": [
+        "return laptop",
+        "device return",
+        "offboarding"
+      ],
+      "effective_until": "2025-12-31",
+      "priority": 10,
+      "id": "RETURN-2024",
+      "status": "retired",
+      "effective_from": "2024-01-01",
+      "rule_code": "return-ten-days",
+      "body": "Company devices must be returned within ten business days of offboarding."
+    },
+    {
+      "topic": "equipment-return",
+      "title": "Equipment returns departmental summary",
+      "keywords": [
+        "return laptop",
+        "device return",
+        "offboarding"
+      ],
+      "effective_until": null,
+      "priority": 2,
+      "id": "RETURN-GUIDE",
+      "status": "current",
+      "effective_from": "2026-01-01",
+      "rule_code": "return-five-days",
+      "body": "Summary guide: Company devices must be returned within five business days of offboarding using the issued tracking label. The company policy is the higher authority."
+    }
+  ]
+}

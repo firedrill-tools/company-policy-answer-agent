@@ -1,0 +1,9 @@
+# Native ChatAnthropic ownership seam
+
+The exercised versions are LangChain 1.4.6, langchain-anthropic 1.7.6, Anthropic 1.14.0 and HTTPX2 2.13.1, with exact runtime dependencies in uv.lock. Inspect the installed integration when upgrading. Its public constructor fields in 1.7.6 include endpoint/key/retry/timeout settings, but no client/http-client injection field. Its `_client` and `_async_client` cached properties otherwise construct SDK clients around library-cached transports.
+
+`runtime.OwnedChatAnthropic` overrides those two accessors only. `_async_client` returns the explicitly owned real AsyncAnthropic client; `_client` raises so unexpected synchronous fallback cannot open an unmanaged connection. All native request/response formatting, schema/tool binding and graph execution remain inherited. PrivateAttr keeps the owned object out of model serialization. This is a compatibility shim tied to the pinned release, not a public extension guarantee or a vendor/global-cache patch.
+
+The application uses public AsyncAnthropic/client context management and HTTPX2 hooks for capture/cleanup. Native tests drive actual create_agent/ToolStrategy -> inherited ChatAnthropic -> SDK -> HTTP, including source feedback, invalid completion, provider error, startup failure, cancellation/deadline and concurrent independent invocations. CLI loopback tests exercise ordinary endpoint configuration and SIGTERM. There is no scripted production mode.
+
+On upgrade, prefer a supported public client/transport constructor field if one exists. Remove the accessor shim only after the same native tests prove request/format/tool behavior, zero hidden retries, pre-dispatch completion, raw usage provenance and ownership on all exit paths. Do not silence failures by patching private caches or discarding SDK error causes. Qualified transport is nonstreaming Messages JSON; enabling wire SSE requires its own evidence.

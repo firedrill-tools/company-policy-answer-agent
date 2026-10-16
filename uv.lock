@@ -194,9 +194,11 @@ wheels = [
 
 [[package]]
 name = "company-policy-answer-agent"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
+    { name = "anthropic" },
+    { name = "httpx2" },
     { name = "langchain" },
     { name = "langchain-anthropic" },
 ]
@@ -208,7 +210,9 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "langchain", specifier = ">=1.0,<2" },
+    { name = "anthropic", specifier = "==1.14.0" },
+    { name = "httpx2", specifier = "==2.13.1" },
+    { name = "langchain", specifier = "==1.4.6" },
     { name = "langchain-anthropic", specifier = "==1.7.6" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=8,<10" },
 ]
