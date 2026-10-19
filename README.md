@@ -95,3 +95,7 @@ uv run --locked python scripts/check_distribution.py
 The 62 offline checks include actual graph/ChatAnthropic/HTTP execution, normal CLI over loopback HTTP, completion/error/SIGTERM, source changes, independent concurrent reads, ownership/startup failure, raw usage, recording failures and data drift. Older injected-agent tests remain separate. Controlled responses verify application boundaries, not Claude judgment, a success rate or measured billing. CI regenerates exact fixture bytes.
 
 Wheel and sdist gates install fresh locked dependencies outside checkout and exercise console/module CLI, eleven private copies, model-free clarification, missing-key failure evidence and actual busy/historical authority operations. Live Claude quality/budget, the new released Firedrill contract, publication and license choice remain parked. A thin integration can use the existing callable/CLI/corpus/receipt seams after the official release is qualified. Explore the [example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/) and [official documentation](https://docs.firedrill.run/).
+
+## Current Firedrill connection — 2026-10-19
+
+The [agent-first adapter and recipe](firedrill/README.md) now use exact-pinned CLI/SDK 2.2.2 and the current command envelope. This supersedes earlier notes saying the release was unavailable. Offline validation is distinct from authenticated persisted execution and live model quality, which remain pending.

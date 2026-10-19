@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "2026-10-14",
+  "name": "company-policy Q&A \u2014 actual application",
+  "target": {
+    "kind": "command",
+    "argv": [
+      "node",
+      "firedrill/target.mjs"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "starter",
+      "name": "Current policy question",
+      "input": {
+        "caseId": "starter"
+      }
+    },
+    {
+      "id": "conflicting-authorities",
+      "name": "Conflicting current authorities",
+      "input": {
+        "caseId": "conflicting-authorities"
+      }
+    }
+  ],
+  "repetitions": 1,
+  "concurrency": 1,
+  "limits": {
+    "timeoutMs": 180000,
+    "maxRuns": 2,
+    "maxOutputBytes": 4194304
+  }
+}

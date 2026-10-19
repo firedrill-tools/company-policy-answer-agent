@@ -15,3 +15,7 @@
 - Read-only independent runs can share immutable inputs with separate clients/receipts. Use new private copies for modified cases, stop owners before replacing input, and do not claim reset deletes receipts/provider retention/billing/caller resources.
 - Verify: uv run --locked --extra test pytest -q (62 checks), uv build, uv run --locked python scripts/check_distribution.py. Both distributions install fresh locked dependencies and exercise CLI/data/domain operations outside checkout. CI also verifies deterministic generation. Test credentials/outputs remain isolated; do not add a scripted production mode or guessed/retired Firedrill integration.
 - Live Claude quality/budget, the released new Firedrill interface, visibility and license remain parked. Continue standalone work without private platform source or production accounts.
+
+## Current Firedrill connection — 2026-10-19
+
+The optional `firedrill/` toolchain now pins released CLI/SDK 2.2.2. Read its README, preserve the actual application entry point and run its offline tests with the existing verification gates. Earlier release-unavailability notes are historical; authenticated persisted and live model proofs remain pending. No retired API, guessed Tool binding, canned normal response or paid campaign.
