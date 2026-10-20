@@ -110,7 +110,7 @@ uv run --locked python scripts/check_distribution.py
 
 The 62 offline checks include actual graph/ChatAnthropic/HTTP execution, normal CLI over loopback HTTP, completion/error/SIGTERM, source changes, independent concurrent reads, ownership/startup failure, raw usage, recording failures and data drift. Older injected-agent tests remain separate. Controlled responses verify application boundaries, not Claude judgment, a success rate or measured billing. CI regenerates exact fixture bytes.
 
-Wheel and sdist gates install fresh locked dependencies outside checkout and exercise console/module CLI, eleven private copies, model-free clarification, missing-key failure evidence and actual busy/historical authority operations. Live Claude quality/budget, authenticated persisted Firedrill runs, and license choice remain parked. The included Firedrill adapter uses the existing CLI/corpus/receipt seams. Explore the [example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/) and [official documentation](https://docs.firedrill.run/).
+Wheel and sdist gates install fresh locked dependencies outside checkout and exercise console/module CLI, eleven private copies, model-free clarification, missing-key failure evidence and actual busy/historical authority operations. Live Claude quality/budget, authenticated persisted Firedrill runs, and license choice remain parked. The included Firedrill adapter uses the existing CLI/corpus/receipt seams. Explore the [Firedrill examples](https://docs.firedrill.run/guides/examples), [Firedrill](https://firedrill.run/) and [official documentation](https://docs.firedrill.run/).
 
 ## Current Firedrill connection — 2026-10-19
 
