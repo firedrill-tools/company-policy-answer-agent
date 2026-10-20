@@ -1,6 +1,20 @@
-# Answer policy questions with cited sources and Claude
+# Company policy answer agent with LangChain and Claude
 
 A LangChain agent searches a fictional company-policy corpus, fetches exact sources and returns a typed answer with citations. Eligibility checks enforce the requested effective date, topic and authority priority. Conflicting sources remain visible. The agent has two local read tools and cannot change policy or contact a business service.
+
+## Simulate with Firedrill
+
+[Firedrill](https://firedrill.run/) is a simulation platform for AI agents.
+Start from this repository’s root:
+
+```sh
+npx firedrill-run init
+```
+
+Sign in and choose your project, then follow the [simulation run guide](firedrill/README.md)
+for application dependencies, a preview and the reviewed scenarios. Your agent runs
+locally or in your CI; model credentials stay separate from Firedrill sign-in.
+The included recipes record outcomes without an automatic quality score or CI gate.
 
 ## Run one case
 
@@ -94,7 +108,7 @@ uv run --locked python scripts/check_distribution.py
 
 The 62 offline checks include actual graph/ChatAnthropic/HTTP execution, normal CLI over loopback HTTP, completion/error/SIGTERM, source changes, independent concurrent reads, ownership/startup failure, raw usage, recording failures and data drift. Older injected-agent tests remain separate. Controlled responses verify application boundaries, not Claude judgment, a success rate or measured billing. CI regenerates exact fixture bytes.
 
-Wheel and sdist gates install fresh locked dependencies outside checkout and exercise console/module CLI, eleven private copies, model-free clarification, missing-key failure evidence and actual busy/historical authority operations. Live Claude quality/budget, the new released Firedrill contract, publication and license choice remain parked. A thin integration can use the existing callable/CLI/corpus/receipt seams after the official release is qualified. Explore the [example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/) and [official documentation](https://docs.firedrill.run/).
+Wheel and sdist gates install fresh locked dependencies outside checkout and exercise console/module CLI, eleven private copies, model-free clarification, missing-key failure evidence and actual busy/historical authority operations. Live Claude quality/budget, authenticated persisted Firedrill runs, publication and license choice remain parked. The included Firedrill adapter uses the existing CLI/corpus/receipt seams. Explore the [example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/) and [official documentation](https://docs.firedrill.run/).
 
 ## Current Firedrill connection — 2026-10-19
 

@@ -1,4 +1,18 @@
-# Firedrill agent-first integration
+# Simulate this agent with Firedrill
+
+Firedrill is a simulation platform for AI agents. Your coding agent can prepare
+and operate these simulations; the application and its model run in your own
+repository or CI.
+
+Start in the repository root, not inside `firedrill/`:
+
+```sh
+npx firedrill-run init
+```
+
+Authorize Firedrill and select a project/environment. Installation choices are
+optional; skip them when using the locked `firedrill/` toolchain below. This setup
+does not invoke the target agent or grant it access to real business accounts.
 
 Released CLI and TypeScript SDK **2.2.2**, verified October 19, 2026, are exact-pinned in this separate optional toolchain. It requires Node 22+ and leaves the application's Python/framework dependencies unchanged. This is a supported command target; no Firedrill SDK import is added to the agent itself.
 
@@ -8,7 +22,6 @@ From the repository root, run `uv sync --locked --extra test` with `uv` on PATH.
 
 ```sh
 npm ci --prefix firedrill --ignore-scripts --no-audit --no-fund
-npm test --prefix firedrill
 firedrill_cli=firedrill/node_modules/@firedrill-run/cli/bin/firedrill.mjs
 node "$firedrill_cli" validate firedrill/scenario.json --json --non-interactive
 ```
@@ -17,7 +30,7 @@ The offline checks cover the released recipe validator, current invocation envel
 
 ## Select scope and execute
 
-Run `node "$firedrill_cli" init` in a human terminal to authorize and select the actual project/environment. Automation supplies `FIREDRILL_TOKEN`, `FIREDRILL_PROJECT_ID` and `FIREDRILL_ENVIRONMENT_ID` through its secret store. The application independently needs `ANTHROPIC_API_KEY` and an enabled model; its ordinary model configuration remains in the main README. Tokens never belong in recipes or source.
+Run `npx firedrill-run init` in a human terminal to authorize and select the actual project/environment. Automation supplies `FIREDRILL_TOKEN`, `FIREDRILL_PROJECT_ID` and `FIREDRILL_ENVIRONMENT_ID` through its secret store. The application independently needs `ANTHROPIC_API_KEY` and an enabled model; its ordinary model configuration remains in the main README. Tokens never belong in recipes or source.
 
 With an authorized model budget:
 
@@ -39,3 +52,11 @@ Preserve operation IDs and private journals after uncertainty. Use `--resume OPE
 Existing CI runs offline checks. Configure actual scope, protected secrets and model budgets before using the released [live CI generator](https://docs.firedrill.run/guides/ci). Authenticated persisted happy/negative runs, live Anthropic quality/cost, public release and licensing remain separate gates.
 
 References: [SDK](https://docs.firedrill.run/sdk/typescript), [command contract](https://docs.firedrill.run/guides/callbacks), [CLI](https://docs.firedrill.run/cli/overview), [operator MCP](https://docs.firedrill.run/guides/control-mcp).
+
+## Offline verification
+
+After installing the application dependencies and locked integration toolchain,
+run `npm test --prefix firedrill` to exercise the adapter checks. These checks are
+optional for first use and call no paid model. The Node 22+ requirement above is
+for the Firedrill clients; it does not lower any application runtime requirement
+in the root README.
